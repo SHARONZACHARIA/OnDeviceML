@@ -1,16 +1,13 @@
-# ondevice
+# On Device Machine Learning in Flutter using TFLite model
 
-A new Flutter project.
+This repository is to show how to use a textclassification model build on keras can be used on flutter app for on device inference
 
-## Getting Started
+## Intro
 
-This project is a starting point for a Flutter application.
+Machine learning can be implemented on mobile platforms using a REST API.But what if we can use a model locally from the mobile device and make inference on it , this would help in offline use of models. Tensor Flow Lite models can be easily loaded on a mobile device and  can be used  as needed. 
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* We will see how to make a text classification app which can detect offensive sentences.
+* Build a Keras model.
+* Save the model and convert it into tflite format.
+* Load the model on mobile platform(android).
+* Use flutter's platform specific  channel to communicate with java code to make inferences.
